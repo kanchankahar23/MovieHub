@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Hub Login</title>
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-[url('/play-page/login.png')] bg-cover bg-center backdrop-blur-sm flex justify-center items-center h-screen">
+
+  <div class="bg-[#1e293b]  backdrop-blur-md p-8 rounded-2xl shadow-lg w-80 md:w-96">
+    <h1 class="text-3xl font-bold text-center text-white mb-6">🎬 Movie-<span class="text-amber-400">Hub</span></h1>
+
+    <form id="loginForm" class="flex flex-col gap-4">
+      <div>
+        <label class="text-white block mb-2">Email</label>
+        <input id="email" type="email" placeholder="Enter your email"
+          class="w-full px-4 py-2 rounded-lg bg-[#334155] text-white outline-none placeholder-gray-400" required>
+      </div>
+      <div>
+        <label class="text-white block mb-2">Password</label>
+        <input id="password" type="password" placeholder="Enter your password"
+          class="w-full px-4 py-2 rounded-lg bg-[#334155] text-white outline-none placeholder-gray-400" required>
+      </div>
+
+      <button type="submit"
+        class="mt-4 bg-amber-400 text-amber-950 font-semibold py-2 rounded-lg transition-all">
+        Login
+      </button>
+
+      <p class="text-gray-400 text-sm text-center mt-3">
+        Don’t have an account?
+        <a href="signup.html" class="text-amber-500 hover:underline">Sign Up</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
