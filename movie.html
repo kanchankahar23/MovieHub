@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie-hub</title>
+
+    <!-- ✅ Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ✅ Tailwind CSS -->
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<link rel="stylesheet" href="src/output.css">
+
+<body class="bg-gray-900">
+    <header class="fixed z-20 top-0 bg-gray-800 flex justify-between w-full px-8 py-2">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <h1 class="text-2xl font-extrabold">Movie-</h1>
+            <h1 class="text-2xl font-extrabold text-orange-300">hub</h1>
+        </div>
+
+        <!-- Search Bar (Hidden for now) -->
+        <div class="hidden sm:flex items-center bg-gray-700 px-2 rounded-lg">
+            <input type="text" placeholder="Search Movie" class="bg-transparent outline-none px-2 text-sm">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="object-cover rounded-full">
+            <img class="w-12 h-12 rounded-full" src="img/user.jpg" alt="User">
+        </div>
+    </header>
+
+    <!-- ===== SIDEBAR ===== -->
+    <nav
+        class="fixed bottom-0 lg:top-0 lg:left-0 lg:h-screen lg:mt-16 w-full lg:w-20 bg-gray-800 flex lg:flex-col justify-between lg:justify-start items-center p-3 lg:py-6 lg:gap-6 z-50">
+        <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
+            <a href=""></a>
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="text-sm"><a href="#home"></a>Home</span>
+        </div>
+
+        <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
+            <i class="fa-solid fa-fire-flame-curved text-xl"></i>
+            <a href="#popular">
+                <span class="text-sm">Trending</span>
+            </a>
+
+        </div>
+
+        <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
+            <i class="fa-regular fa-compass text-xl"></i>
+
+            <a href="#Explore">
+                <span class="text-sm">Explore</span>
+            </a>
+
+        </div>
+
+        <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
+            <i class="fa-solid fa-tv text-xl"></i>
+            <a href="/movie.html">
+                <span class="text-sm">Movies</span>
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
+            <i class="fa-regular fa-heart text-xl"></i>
+            <a href="#favourite">
+                <span class="text-sm">Favourite</span>
+            </a>
+
+        </div>
+    </nav>
+    <div
+        class="md:mt-24 relative  mt-20 md:w-[85%] md:ml-24 overflow-hidden md:overflow-visible rounded-lg flex justify-center items-center">
+        <img class="w-full h-full object-cover md:object-contain" src="play-page/play-background.jpg" alt="">
+
+        <div class="md:ml-24 absolute bottom-0 left-0 md:mb-10">
+            <h1 class="font-bold md:text-4xl text-2xl font-sans">Jumanji:Welcome to the Jungle</h1>
+            <div class="flex md:gap-5 gap-2 md:mt-5">
+                <div class="bg-gray-700 p-1 font-semibold">Action</div>
+                <div class="bg-gray-700 p-1 font-semibold">Adventure</div>
+                <div class="bg-gray-700 p-1 font-semibold">4K</div>
+            </div>
+            <div class="flex w-full mt-5 md:mt-10 gap-4">
+                <div id="playvideobtn"
+                    class="bg-amber-300 w-10 h-10 rounded-full text-center object-cover text-xl hover:bg-amber-600 hover:transition">
+                    ▶️</div>
+                <h1 class="md:text-2xl font-bold">Watch the trailer</h1>
+            </div>
+
+        </div>
+        <div class="absolute " id="playvideo"></div>
+    </div>
+
+
+    <div class=" md:ml-24 md:mt-10 mt-4">
+        <h1 class="text-amber-600 font-bold text-2xl">Jumanji:Welcome to the Jungle</h1>
+        <p class="md:w-1/2 md:mt-5 mt-2">When four students play with a magical video game, they are drawn to the Jungle
+            world
+            of Jumanji, where they
+            are trapped as thier avatars. To return to the real world,they must finish the game.</p>
+    </div>
+
+    <h1 class="text-2xl mt-5 md:ml-24 font-bold md:mt-3 text-amber-600">Movie Cast</h1>
+    <div class=" md:ml-24 ml-5 grid grid-cols-2 md:grid-cols-6 md:gap-1">
+
+        <div class="">
+            <img class="w-40 h-44 mt-4" src="/play-page/cast1.jpg" alt="">
+            <h1 class="text-xl">Dwayne Johnson</h1>
+        </div>
+        <div class="">
+            <img class="w-40 h-44 mt-4" src="/play-page/cast2.jpg" alt="">
+            <h1 class="text-xl">Karen Gilan</h1>
+        </div>
+        <div class="">
+            <img class="w-40 h-44 mt-4" src="/play-page/cast3.jpg" alt="">
+            <h1 class="text-xl">Kevin Hart</h1>
+        </div>
+        <div class="">
+            <img class="w-40 h-44 mt-4" src="/play-page/cast4.jpg" alt="">
+            <h1 class="text-xl">Jack Black </h1>
+        </div>
+        <div class="">
+            <img class="w-40 h-44 mt-4" src="/play-page/cast5.jpg" alt="">
+            <h1 class="text-xl">Nick jonas Johnson</h1>
+        </div>
+        <div class="">
+            <img class="w-40 h-44 mt-4" src="/play-page/cast6.jpg" alt="">
+            <h1 class="text-xl"> Madison iseman</h1>
+        </div>
+
+
+    </div>
+
+    <div class="flex justify-center items-center w-full flex-col mt-20">
+        <h1 class="text-3xl">Download Movie</h1>
+        <div class="flex gap-5 mt-5">
+            <div class="bg-amber-500 px-3 py-1 text-xl ">480p</div>
+            <div class="bg-amber-500 px-3 py-1 text-xl ">720p</div>
+            <div class="bg-amber-500 px-3 py-1 text-xl ">1080p</div>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script src="script.js">
+    
+</script>
+
+</html>
