@@ -1,5 +1,8 @@
 let moviename = document.querySelector(".moviename");
 let showmovie = document.querySelector("#showmovie");
+let prevbtn = document.querySelector(".prevbtn");
+let nextbtn = document.querySelector(".nextbtn");
+let multiplemovie = document.querySelector("#multiplemovie")
 
 moviename.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
@@ -56,15 +59,19 @@ moviename.addEventListener("keydown", (e) => {
 
         </div>
              `
-                
+             multiplemovie.classList.add("hidden")
+              moviename.value = ""  
             })
             .catch(err => {
                 console.log("Error:", err);
             });
     }
+    
 });
-})
 
 function login(){
     window.location.href = "login.html"
 }
+
+
+
