@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="/src/output.css">
 
 <body class="bg-gray-900 w-full h-screen">
+    <!-- header -->
     <header class="fixed z-20 top-0 bg-gray-800 flex justify-between w-full px-8 py-4">
         <!-- Logo -->
         <div class="flex items-center">
@@ -21,7 +22,7 @@
         <div class="flex justify-between items-center gap-5">
             <!-- Search Bar (Hidden for now) -->
             <div class="hidden sm:flex items-center bg-gray-700 px-5 py-2 rounded-lg">
-                <input type="text"  placeholder="Search Movie" class=" moviename bg-transparent outline-none">
+                <input type="text" placeholder="Search Movie" class=" moviename bg-transparent outline-none">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
@@ -40,7 +41,7 @@
         <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
             <a href=""></a>
             <i class="fa-solid fa-house text-xl"></i>
-            <span class="text-sm"><a href="#home"></a>Home</span>
+            <span class="text-sm"><a href="/index.html"></a>Home</span>
         </div>
 
         <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
@@ -62,14 +63,14 @@
 
         <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
             <i class="fa-solid fa-tv text-xl"></i>
-            <a href="/movie.html">
+            <a href="/showmovie.html">
                 <span class="text-sm">Movies</span>
             </a>
         </div>
 
         <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
             <i class="fa-regular fa-heart text-xl"></i>
-            <a href="#favourite">
+            <a href="/movie.html">
                 <span class="text-sm">Favourite</span>
             </a>
 
@@ -77,10 +78,14 @@
     </nav>
 
 
-
-    <section id="showmovie" class=" bg-gray-900 pt-16 mt-6 md:ml-5 md:mt-10">
+        <div id="multiplemovie" class="flex justify-center items-center w-full h-screen bg-gray-900">
+            <img class="w-[80%] md:w-[80%] pt-32" src="/play-page/multiplemovie.png" alt="">
         </div>
-    </section>
+
+
+    <div id="showmovie" class=" bg-gray-900 pt-16 mt-6 md:ml-5 md:mt-10">
+       
+    </div>
 
 
 </body>
