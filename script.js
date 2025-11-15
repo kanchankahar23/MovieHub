@@ -3,7 +3,7 @@ let showmovie = document.querySelector("#showmovie");
 
 moviename.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-        let movie = moviename.value.trim(); 
+       let movie = moviename.value.trim();
         // console.log(movie);
         let api = `https://www.omdbapi.com/?t=${movie}&apikey=dd8bef89`;
         console.log(api);
@@ -63,3 +63,8 @@ moviename.addEventListener("keydown", (e) => {
             });
     }
 });
+})
+
+function login(){
+    window.location.href = "login.html"
+}
