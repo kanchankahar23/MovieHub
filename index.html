@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movie-hub</title>
 
-  <!-- ✅ Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- ✅ Tailwind CSS -->
   <link rel="stylesheet" href="/src/output.css">
 </head>
 
@@ -24,13 +21,16 @@
     <div class="flex justify-between items-center gap-5">
       <!-- Search Bar (Hidden for now) -->
       <div class="hidden sm:flex items-center bg-gray-700 px-5 py-2 rounded-lg">
-        <input  type="text" placeholder="Search Movie" class="valuemovie bg-transparent outline-none">
+        <input id="searchbtn" type="text" placeholder="Search Movie" class="bg-transparent outline-none">
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
 
-      <div>
-        <button onclick=login() id="login"
-          class="px-3 py-1 rounded-md text-amber-950 font-semibold hover:bg-amber-600 bg-amber-400">Login</button>
+    <div>
+        <button
+          class="loginbtn px-3 py-1  rounded-md text-amber-950 font-semibold hover:bg-amber-600 bg-amber-400">Login</button>
+          <button>
+            <img class="userimg w-14 h-14 hidden  rounded-full  font-semibold hover:bg-amber-600 bg-amber-400" src="/img/user.jpg" alt="">
+          </button>            
       </div>
     </div>
 
@@ -48,7 +48,7 @@
 
     <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
       <i class="fa-solid fa-fire-flame-curved text-xl"></i>
-      <a href="#popular">
+      <a href="#adultshow">
         <span class="text-sm">Trending</span>
       </a>
 
@@ -217,6 +217,7 @@
       <section id="Explore" class="px-4 sm:px-8 md:px-14 py-4 lg:ml-24 mt-8 flex justify-between items-center">
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold">▶️ Movies & Shows</h1>
       </section>
+      
       <section class="flex gap-5 ml-6 overflow-x-auto lg:ml-24 mr-5 mt-5 pb-10 ">
         <!-- Movie Card 1 -->
         <div class=" relative w-52 h-72 shrink-0">
@@ -423,6 +424,8 @@
 
   </footer>
 </body>
-<script src="script.js"></script>
+<script src="script.js">
+  
+</script>
 
 </html>
