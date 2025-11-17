@@ -6,6 +6,9 @@ const userimg = document.querySelector(".userimg");
 const login = document.querySelector("#login");
 const loginbtn = document.querySelector(".loginbtn");
 const searchbtn = document.querySelector("#searchbtn");
+const playvideo =document.querySelector("#playvideo");
+const playvideobtn = document.querySelector("#playvideobtn");
+
 
 
 if (login) {
@@ -21,7 +24,13 @@ if (login) {
     });
 }
 
+playvideobtn.addEventListener("click",()=>{
+    playvideo.innerHTML =` <video controls autoplay loop  class="w-full h-[90%] object-cover md:ml-3">
+            <source src="/play-page/Jumanji.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>`
 
+})
 
 if (loginbtn) {
     loginbtn.addEventListener("click", () => {
