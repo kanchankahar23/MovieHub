@@ -65,7 +65,7 @@ function showDetailOfMovie() {
 
             if (data.Response === "False") {
                 showmovie.innerHTML = `
-                    <h1 class="text-red-500 text-3xl">Movie Not Found ❌</h1>`;
+                    <h1 class="text-red-500 text-center text-3xl">Movie Not Found ❌</h1>`;
                 return;
             }
 
