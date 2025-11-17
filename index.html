@@ -25,12 +25,13 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
 
-    <div>
+      <div>
         <button
           class="loginbtn px-3 py-1  rounded-md text-amber-950 font-semibold hover:bg-amber-600 bg-amber-400">Login</button>
-          <button>
-            <img class="userimg w-14 h-14 hidden  rounded-full  font-semibold hover:bg-amber-600 bg-amber-400" src="/img/user.jpg" alt="">
-          </button>            
+        <button>
+          <img class="userimg w-14 h-14 hidden  rounded-full  font-semibold hover:bg-amber-600 bg-amber-400"
+            src="/img/user.jpg" alt="">
+        </button>
       </div>
     </div>
 
@@ -41,7 +42,6 @@
   <nav
     class="fixed bottom-0 lg:top-0 lg:left-0 lg:h-screen lg:mt-16 w-full lg:w-20 bg-gray-800 flex lg:flex-col justify-between lg:justify-start items-center p-3 lg:py-6 lg:gap-6 z-50">
     <div class="flex flex-col items-center hover:text-amber-500 cursor-pointer">
-      <a href=""></a>
       <i class="fa-solid fa-house text-xl"></i>
       <span class="text-sm"><a href="#home"></a>Home</span>
     </div>
@@ -83,7 +83,7 @@
   <!-- ===== MAIN CONTENT ===== -->
   <main class="">
     <!-- Hero Section -->
-    <section class="flex justify-center items-center w-full mt-24 md:mt-10">
+    <section id="home" class="flex justify-center items-center w-full mt-24 md:mt-10">
       <div
         class="relative w-[95%] sm:w-[90%] md:w-[80%] lg:w-[90%] h-60 sm:h-80 md:h-[70vh]  md:mt-20 overflow-hidden rounded-lg shadow-lg">
         <img class="w-full h-full object-cover md:ml-10" src="img/movie-1.jpg" alt="Home Background" />
@@ -217,7 +217,7 @@
       <section id="Explore" class="px-4 sm:px-8 md:px-14 py-4 lg:ml-24 mt-8 flex justify-between items-center">
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold">▶️ Movies & Shows</h1>
       </section>
-      
+
       <section class="flex gap-5 ml-6 overflow-x-auto lg:ml-24 mr-5 mt-5 pb-10 ">
         <!-- Movie Card 1 -->
         <div class=" relative w-52 h-72 shrink-0">
@@ -269,16 +269,25 @@
 
         <!-- Card 5 -->
         <div class="relative w-52 h-72 shrink-0">
-          <img src="img/movie-5.jpg" class="w-full h-full object-cover rounded-lg" alt="Spectre">
+          <img src="img/movie-6.jpg" class="w-full h-full object-cover rounded-lg" alt="Spectre">
           <div class="absolute bottom-0 w-full bg-gray-800/80 px-4 py-2 flex justify-between items-center rounded-b-lg">
             <div>
-              <h1 class="font-bold">Spectre</h1>
+              <h1 class="font-bold">Money Hiest</h1>
               <p class="text-gray-400 text-sm">Action</p>
             </div>
             <button class="w-8 h-8 bg-amber-500 rounded-full flex justify-center items-center text-sm">▶️</button>
           </div>
         </div>
-
+        <div class="relative w-52 h-72 shrink-0">
+          <img src="img/movie-8.jpg" class="w-full h-full object-cover rounded-lg" alt="Spectre">
+          <div class="absolute bottom-0 w-full bg-gray-800/80 px-4 py-2 flex justify-between items-center rounded-b-lg">
+            <div>
+              <h1 class="font-bold">Johnny English</h1>
+              <p class="text-gray-400 text-sm">Action</p>
+            </div>
+            <button class="w-8 h-8 bg-amber-500 rounded-full flex justify-center items-center text-sm">▶️</button>
+          </div>
+        </div>
 
         </div>
       </section>
@@ -377,7 +386,7 @@
     </section>
 
     <!-- Young adult shows -->
-    <section id="popular" class="px-4  sm:px-8 md:px-14 py-4 lg:ml-24 mt-8 flex justify-between items-center">
+    <section id="adultshow" class="px-4  sm:px-8 md:px-14 py-4 lg:ml-24 mt-8 flex justify-between items-center">
       <h1 class="text-lg sm:text-xl md:text-2xl font-bold">▶️ Young adult shows</h1>
     </section>
     <section class="flex gap-5 overflow-x-auto ml-6 lg:ml-28 mb-64 mr-5 mt-5 pb-4">
@@ -425,7 +434,7 @@
   </footer>
 </body>
 <script src="script.js">
-  
+
 </script>
 
 </html>
