@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Hub Login</title>
+  <title>Movie Hub</title>
   <link href="/src/output.css" rel="stylesheet">
 </head>
 
@@ -25,19 +25,24 @@
           class="w-full px-4 py-2 rounded-lg bg-[#334155] text-white outline-none placeholder-gray-400" required>
       </div>
 
-      <button type="submit"
+      <button id="login"
         class="mt-4 bg-amber-400 text-amber-950 font-semibold py-2 rounded-lg transition-all">
         Login
+     
       </button>
 
       <p class="text-gray-400 text-sm text-center mt-3">
         Don’t have an account?
         <a href="signup.html" class="text-amber-500 hover:underline">Sign Up</a>
       </p>
+
+      <h1 class="msg text-green-500 text-center hidden">Thank you for login</h1>
     </form>
   </div>
 
   <script src="script.js">
+  
+
 
   </script>
 </body>
